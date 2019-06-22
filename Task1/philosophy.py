@@ -5,7 +5,7 @@ import bs4
 import requests
 
 
-class philosphy:
+class philosophy:
     
     def __init__(self, first_url, max_iterations=30, end_url = "https://en.wikipedia.org/wiki/Philosophy"):
         self.first_url = first_url
@@ -70,5 +70,5 @@ class philosphy:
             return True
 
 first_url = "https://en.wikipedia.org/wiki/" + sys.argv[1] 
-scrap = philosphy(first_url=first_url)
+scrap = philosophy(first_url=first_url)
 scrap.scraping()
